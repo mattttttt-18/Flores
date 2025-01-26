@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
             for (let i = 1; i <= 6; i++) { // Como tenemos 6 piezas en 2 filas y 3 columnas
                 const piece = document.createElement('div');
                 piece.classList.add('puzzle-piece');
-                piece.style.backgroundImage = `url('Imagenes/nivel_${level}/${i}.png')`; // Cambia la URL según el nivel
+                piece.style.backgroundImage = `url('Imagenes/Nivel_${level}/${i}.png')`; // Cambia la URL según el nivel
                 piece.dataset.position = i;
                 piece.addEventListener('click', selectPiece);
                 pieces.push(piece);
